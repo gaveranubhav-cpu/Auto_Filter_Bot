@@ -1749,10 +1749,10 @@ async def auto_filter(client, msg, spoll=False):
                 await sent_obj.delete()
             except Exception:
                 pass
-            try:
-                await orig_msg.delete()
-            except Exception:
-                pass
+          # try:
+              # await orig_msg.delete()
+          # except Exception:
+              # pass
         except Exception:
             # ignore scheduling errors
             pass
